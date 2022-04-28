@@ -68,10 +68,29 @@ CIRCUIT DIAGRAM
 
 **PROGRAM** 
  
+```
+int potpin= A5;
+int ledpin= 2;
+void setup()
+{
+  pinMode(potpin,INPUT);
+  pinMode(ledpin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int potmeasure = analogRead(A5);
+  if (potmeasure>=450)
+ {
+    digitalWrite(2,HIGH);
+ }
+ else
+   digitalWrite(2,LOW);  
+}
 
 
-
-
+```
 
 
 
@@ -82,7 +101,7 @@ CIRCUIT DIAGRAM
 **
 
 
-[My image](username.github.com/repository/img/image.jpg)
+![GITHUB LOGO](ex-2.png)
 
 
 
